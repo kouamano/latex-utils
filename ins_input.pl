@@ -1,7 +1,7 @@
 #!/usr/bin/perl
 while(<>){
 	$file = '';
-	if($_ =~ /^\\input\{(.*?)\}/){
+	if($_ =~ /^\s*\\input\{(.*?)\}/){
 		$file = $1;
 		$s=~/()/;
 		system("cat $file");
